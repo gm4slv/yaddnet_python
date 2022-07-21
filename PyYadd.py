@@ -13,12 +13,12 @@ reload(sys)
 sys.setdefaultencoding("windows-1252")
 
 def send_to_mirror(data):
-    data = "[log];"+data
+    log_data = "[log];"+data
     port = 2505
     host = "216.108.227.44"
     host2 = "80.229.223.86"
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    sock.sendto(data, (host, port))
+    sock.sendto(log_data, (host, port))
     sock.sendto(data, (host2, port))
     
     return
