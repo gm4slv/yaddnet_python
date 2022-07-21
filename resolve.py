@@ -170,6 +170,10 @@ def resolve_aprs(mmsi):
             #print "Name....", name
             mmsi = station['mmsi']
             call = station['srccall']
+
+            if call == mmsi:
+                call = "UNK"
+
             vclass = station['vesselclass']
             
             # vclass is the AIS digits
