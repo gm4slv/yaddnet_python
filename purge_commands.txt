@@ -1,5 +1,4 @@
-delete from newlog where raw_dsc_message like '%telecommands%not decoded%';
-delete from newlog where raw_dsc_message like '%err%';
-delete from newlog where raw_dsc_message like '%;unk;%';
-#delete from newlog where datetime<date_sub(now(), interval 365 day);
-delete from logger where datetime<date_sub(now(), interval 24 hour);
+#delete from newlog where raw_dsc_message like '%telecommands%not decoded%';
+#delete from newlog where raw_dsc_message like '%err%';
+#delete from newlog where raw_dsc_message like '%;unk;%';
+delete from logger where datetime<date_sub(now(), interval 48 hour);

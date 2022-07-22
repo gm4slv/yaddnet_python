@@ -29,7 +29,7 @@ def purge_db_func(command):
     # disconnect from server
     db.close()
 
-pysql.load_logger("PURGE", "Purging main databases of old entries" )
+pysql.load_logger("PURGE", "Purging main databases of errors & old logger entries" )
 
 
 for line in purge_commands:
