@@ -1,0 +1,13 @@
+YaDDNet Scripts
+
+This is a collection of Python and Bash which runs the 
+network servers and SQL database for the YaDDNet DSC
+website:
+
+http://www.yaddnet.org
+
+It's all very rough, but runs un-attended for months
+without issues, so it can't be too bad!
+
+John, GM4SLV
+
